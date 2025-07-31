@@ -1,0 +1,72 @@
+# Proyecto 1: Web Estática con AWS S3 + CloudFront
+
+Este proyecto muestra cómo desplegar un sitio web estático usando AWS S3 para hosting y CloudFront para distribución global y HTTPS.
+
+---
+
+## Tecnologías utilizadas
+- **Amazon S3:** Hosting de sitio web estático.
+- **Amazon CloudFront:** CDN para entrega rápida y segura con HTTPS.
+
+---
+
+## Objetivo
+Crear un sitio web sin servidores físicos, que sea rápido, seguro y accesible globalmente con HTTPS, sin usar dominio personalizado.
+
+---
+
+## Arquitectura del proyecto
+
+![Arquitectura AWS](ruta/a/tu/imagen-arquitectura.png)
+
+---
+
+## Pasos para desplegar
+
+1. **Crear bucket S3 y subir archivos:**
+   - Habilitar hosting de sitio web estático.
+   - Subir archivos HTML, CSS y JS.
+   - Configurar permisos públicos para permitir lectura.
+
+2. **Crear distribución CloudFront:**
+   - Establecer origen apuntando al bucket S3 (endpoint REST).
+   - Configurar política para redirigir HTTP a HTTPS.
+   - Definir objeto raíz (index.html).
+
+3. **Probar el sitio:**
+   - Acceder a la URL de CloudFront (ejemplo: `dxxxxx.cloudfront.net`).
+   - Verificar que carga con HTTPS y que todo funciona correctamente.
+
+---
+
+## Resultados
+
+El sitio está disponible globalmente con alta velocidad y seguridad HTTPS, sin necesidad de administrar servidores o certificados SSL manualmente.
+
+---
+
+## Captura del sitio funcionando con HTTPS
+
+![Sitio en CloudFront con HTTPS](ruta/a/tu/imagen-sitio-https.png)
+
+---
+
+## Capturas de consola AWS
+
+### Configuración de distribución CloudFront
+
+![CloudFront Console](ruta/a/tu/imagen-cloudfront-config.png)
+
+### Bucket S3 con hosting estático habilitado
+
+![S3 Bucket Console](ruta/a/tu/imagen-s3-console.png)
+
+---
+
+## Demo
+
+[URL de tu distribución CloudFront]
+
+---
+
+¡Gracias por revisar este proyecto! Si tienes dudas o quieres colaborar, contáctame.
