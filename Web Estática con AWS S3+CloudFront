@@ -17,7 +17,7 @@ Crear un sitio web sin servidores físicos, que sea rápido, seguro y accesible 
 
 ## Arquitectura del proyecto
 
-![Arquitectura AWS](ruta/a/tu/imagen-arquitectura.png)
+![Arquitectura AWS](./imágenes/diagrama.png)
 
 ---
 
@@ -31,7 +31,7 @@ Crear un sitio web sin servidores físicos, que sea rápido, seguro y accesible 
 2. **Crear distribución CloudFront:**
    - Establecer origen apuntando al bucket S3 (endpoint REST).
    - Configurar política para redirigir HTTP a HTTPS.
-   - Definir objeto raíz (index.html).
+   - Definir objeto raíz (./imágenes/index.html).
 
 3. **Probar el sitio:**
    - Acceder a la URL de CloudFront (ejemplo: `dxxxxx.cloudfront.net`).
@@ -47,7 +47,7 @@ El sitio está disponible globalmente con alta velocidad y seguridad HTTPS, sin 
 
 ## Captura del sitio funcionando con HTTPS
 
-![Sitio en CloudFront con HTTPS](ruta/a/tu/imagen-sitio-https.png)
+![Sitio en CloudFront con HTTPS](./imágenes/segura.png)
 
 ---
 
@@ -55,18 +55,17 @@ El sitio está disponible globalmente con alta velocidad y seguridad HTTPS, sin 
 
 ### Configuración de distribución CloudFront
 
-![CloudFront Console](ruta/a/tu/imagen-cloudfront-config.png)
+![CloudFront Console](./imágenes/cloudfront.png)
 
 ### Bucket S3 con hosting estático habilitado
 
-![S3 Bucket Console](ruta/a/tu/imagen-s3-console.png)
+![S3 Bucket Console](./imágenes/s3.png)
 
 ---
 
 ## Demo
 
-[URL de tu distribución CloudFront]
-
+https://dxyihij6biz62.cloudfront.net/
 ---
 
 ¡Gracias por revisar este proyecto! Si tienes dudas o quieres colaborar, contáctame.
